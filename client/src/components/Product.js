@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-const Product = ({product, onClickHander}) => {
+const Product = ({ product, onClickHander }) => {
 
-  const[isInCart, setIsInCart] = useState(false)
+  const [isInCart, setIsInCart] = useState(false)
 
   return (
     <div style={{
@@ -12,13 +13,14 @@ const Product = ({product, onClickHander}) => {
       flexDirection: 'column',
       margin: '5px'
     }}>
-      <h2>{product.name}</h2>
+      <h2><Link to='/Detail'>{product.name}</Link></h2>
       <div>{product.price}czk</div>
-      <div><img src={product.img} alt='' height={150} width={150} /></div>     
+      <div><Link to='/Detail'><img src={product.img} alt='' height={150} width={150} /></Link></div>
       <button onClick={() => {
         setIsInCart(true)
-        onClickHander(product)}}>Buy</button>
-        <div>{isInCart && "In cart"}</div>
+        onClickHander(product)
+      }}>Buy</button>
+      <div>{isInCart && "In cart"}</div>
     </div>
   )
 }
