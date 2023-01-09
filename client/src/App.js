@@ -1,7 +1,8 @@
 import Navigation from './components/Navigation';
 import About from './pages/About'
 import Catalog from './pages/Catalog'
-import Landing from './pages/Landing';
+import Landing from './pages/Landing'
+import Detail from './pages/Detail'
 import background from './background.jpeg';
 import {
   Routes,
@@ -28,7 +29,7 @@ function App() {
           <Route path='/' element={<Landing />} />
           <Route path='/Catalog' element={<Catalog />} />
           <Route path='/About' element={<About />} />
-          <Route />
+          <Route path='/Detail' element={<Detail />} />
         </Routes>
       </div>
     </div>
