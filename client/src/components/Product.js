@@ -13,7 +13,7 @@ const Product = ({ product, onClickHander }) => {
       flexDirection: 'column',
       margin: '5px'
     }}>
-      <h2><Link to='/Detail'>{product.name}</Link></h2>
+      <h2><Link to='/Detail' state={{ data: product }}>{product.name}</Link></h2>
       <div>{product.price}czk</div>
       <div><Link to='/Detail'><img src={product.img} alt='' height={150} width={150} /></Link></div>
       <button onClick={() => {
