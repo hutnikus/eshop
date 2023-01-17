@@ -6,7 +6,7 @@ import Detail from './pages/Detail'
 import background from './background.jpeg';
 import {
   Routes,
-  Route,
+  Route
 } from 'react-router-dom';
 
 
@@ -24,7 +24,7 @@ function App() {
         marginRight: '150px',
         height: '100vh'
       }}>
-        <Navigation />
+        <Navigation className="nav" />
         <Routes>
           <Route path='/' element={<Landing />} />
           <Route path='/Catalog' element={<Catalog />} />

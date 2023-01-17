@@ -14,7 +14,7 @@ const Detail = () => {
         <div>
             <h1>Detail {data.name}</h1>
             <img src={data.img} alt='' height={150} width={150} />
-            <div>{data.price}czk</div>         
+            <div>{data.price}czk</div>
         </div>
     )
 }
