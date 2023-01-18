@@ -1,8 +1,6 @@
 const About = () => {
   return (
-    <div style={{
-      paddingTop: "60px"
-    }}>
+    <div>
       <h1>About page</h1>
     </div>
   )

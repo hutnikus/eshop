@@ -6,11 +6,19 @@
   padding: 0;
 }
 
+.home {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
 
 .nav {
+  width: 100vw;
+  background-color: #1976d2;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -18,19 +26,15 @@ body {
   gap: 2rem;
   padding: 0 1rem;
   list-style: none;
+  text-decoration: none;
 }
 
-.nav li {
-  color: blue;
-  list-style-type: none
+.core {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.nav ul {
-  color: inherit;
-  list-style: none;
+.nav a {
+  text-decoration: none;
+  color: white;
 }
-
-.home {
-  font-size: 2rem;
-}
-

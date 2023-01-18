@@ -7,7 +7,6 @@ const Product = ({ product, onClickHander }) => {
 
   return (
     <div style={{
-      paddingTop: "70px",
       width: "150px",
       border: '1px solid black',
       display: 'flex',
