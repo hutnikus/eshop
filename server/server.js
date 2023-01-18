@@ -11,5 +11,7 @@ app.get('/', (req, res) => {
 
 app.use('/api',apiRouter)
 
+app.use('/static/',express.static('data/static'))
+
 
 app.listen(3000, console.log("Server running on http://localhost:3000/"))
