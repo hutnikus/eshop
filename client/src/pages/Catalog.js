@@ -71,7 +71,7 @@ function Catalog() {
 				}}
 			>
 				{products.map((item, idx) => (
-					<Product key={item._id || idx} product={item} onClickHander={handler} />
+					<Product key={item.id || idx} product={item} onClickHander={handler} />
 				))}
 			</div>
 		</div>
