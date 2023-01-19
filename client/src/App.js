@@ -22,7 +22,7 @@ class App extends Component {
 							<Route index element={<Catalog />} />
 							<Route path=":id" element={<Detail />} />
 						</Route>
-						<Route path="/About" element={<About />} />
+						<Route path="/O Firme" element={<About />} />
 						<Route path="/Detail" element={<Detail />} />
 						<Route path="/Ucet" element={<Ucet />} />
 						<Route path="/Kosik" element={<Kosik />} />
